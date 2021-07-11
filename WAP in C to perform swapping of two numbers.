@@ -1,0 +1,22 @@
+#include<stdio.h> //including header file to perform input and output operation
+int main()
+{
+    //taking the input of two numbers
+    printf("Enter a number: ");
+    int a;
+    scanf("%d",&a);
+    printf("Enter another number: ");
+    int b;
+    scanf("%d",&b);
+    printf("\n\nBefore swapping:\na=%d\nb=%d\n\n",a,b);
+
+    //performing the swapping operation without using any temporary variable
+    a=a+b;
+    b=a-b;
+    a=a-b;
+
+    //printing the swapped values
+    printf("\n\nAfter swapping:\na=%d\nb=%d\n\n",a,b);
+    return 0;
+
+}
