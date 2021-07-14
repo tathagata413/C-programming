@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    //printing the menu
+    printf("Enter the case:\n1. If your marks is 85-100.\n2. If your marks is 70-84.\n3. If your marks is 55-69.\n4. If your marks is 40-54.\n5. If your marks is below 40.");
+
+    //taking input from user
+    printf("\n\nEnter your choice: ");
+    int ch;
+    scanf("%d",&ch);
+
+    //perform switch operation
+    switch(ch)
+    {
+        case 1: printf("\nYOUR GRADE IS A");
+                break;
+        case 2: printf("\nYOUR GRADE IS B");
+                break;
+        case 3: printf("\nYOUR GRADE IS C");
+                break;
+        case 4: printf("\nYOUR GRADE IS D");
+                break;
+        case 5: printf("\nYOUR GRADE IS F");
+                break;
+        default: printf("\n******************** INVALID CHOICE ********************");
+    }
+
+    return 0;
+
+}
